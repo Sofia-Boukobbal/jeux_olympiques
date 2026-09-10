@@ -20,12 +20,10 @@ public class JeuxOlympiques {
         }
     }
 
-    // TODO supprimer un participant
     public void supprimerParticipant(Participant participant) {
         participants.remove(participant);
     }
 
-    // Méthode privée demandée : signature (athlète, entraineur) -> void, lève l'exception
     private void associateTrainer(Athlete athlete, Entraineur entraineur) throws IncompatibleSportException {
         if (!athlete.getDiscipline().equalsIgnoreCase(entraineur.getDiscipline())) {
             throw new IncompatibleSportException();
@@ -33,7 +31,6 @@ public class JeuxOlympiques {
         athlete.setEntraineur(entraineur);
     }
 
-    // Méthode publique qui appelle la méthode privée et gère l'exception
     public void associerEntraineurAAthlete(Athlete athlete, Entraineur entraineur) {
         try {
             associateTrainer(athlete, entraineur);

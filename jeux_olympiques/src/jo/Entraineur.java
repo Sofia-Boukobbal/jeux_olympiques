@@ -10,7 +10,7 @@ public class Entraineur extends Participant {
         return prenom + " " + nom;
     }
 
-    @Override
+
     public void afficher() {
         System.out.println(prenom + " " + nom + " (" + pays + ", " + discipline + ") - entraîneur");
     }
