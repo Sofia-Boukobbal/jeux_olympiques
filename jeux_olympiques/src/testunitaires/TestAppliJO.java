@@ -28,7 +28,7 @@ class TestAppliJO {
 		jeux.associerEntraineurAAthlete(usain, glen);  
 		jeux.associerEntraineurAAthlete(leon, glen);   
 		jeux.associerEntraineurAAthlete(florent, bob);
-		fail("Not yet implemented");
+		fail("Pas implémenter !");
 		
 		jeux.afficherTousLesParticipants();
 		jeux.supprimerParticipant(bob);
